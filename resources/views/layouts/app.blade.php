@@ -10,8 +10,8 @@
 	<link href="/admin/css/font-awesome.min.css" rel="stylesheet">
 	<link href="/admin/css/datepicker3.css" rel="stylesheet">
 	<link href="/admin/css/styles.css" rel="stylesheet">
-
 	<link rel="stylesheet" href="/sweetalert/sweetalert.css">
+	{{-- <link rel="stylesheet" href="/css/app.css"> --}}
 
 	<!--Custom Font-->
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -94,22 +94,11 @@ window.Laravel = {!! json_encode([
 	<script src="/admin/js/bootstrap.min.js"></script>
 	<script src="/admin/js/chart.min.js"></script>
 	<script src="/admin/js/chart-data.js"></script>
-	<script src="/admin/js/easypiechart.js"></script>
-	<script src="/admin/js/easypiechart-data.js"></script>
 	<script src="/admin/js/bootstrap-datepicker.js"></script>
 	<script src="/admin/js/custom.js"></script>
-	<script>
-		window.onload = function () {
-	var chart1 = document.getElementById("line-chart").getContext("2d");
-	window.myLine = new Chart(chart1).Line(lineChartData, {
-	responsive: true,
-	scaleLineColor: "rgba(0,0,0,.2)",
-	scaleGridLineColor: "rgba(0,0,0,.05)",
-	scaleFontColor: "#c5c7cc"
-	});
-};
-	</script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="\js\app.js"></script>
+
+	{{-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> --}}
 	<script src="/sweetalert/sweetalert.min.js"></script>
 	@stack('scripts')
 	@include('clientes.create')

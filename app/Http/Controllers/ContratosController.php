@@ -25,8 +25,13 @@ class ContratosController extends Controller
      */
     public function create()
     {
+
+      if (request()->ajax()) {
+        return Cliente::all();
+      }
+
         $clientes = Cliente::all();
-        return view('contratos.create',compact('clientes'));      
+        return view('contratos.create',compact('clientes'));
     }
 
     /**
