@@ -42753,6 +42753,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
@@ -42777,7 +42779,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             this.cliente = cliente;
         },
         crearcontrato: function crearcontrato() {
-            axios.post('/contrato', this.cliente).then(function (res) {
+            axios.post('/contratos', this.cliente).then(function (res) {
                 console.log(res.data);
             });
         }
@@ -42831,7 +42833,6 @@ var render = function() {
                   ],
                   staticClass: "form-control",
                   attrs: {
-                    list: "",
                     name: "name",
                     type: "text",
                     placeholder: "Escribe el nombre del cliente",
@@ -42846,6 +42847,7 @@ var render = function() {
                       ) {
                         return null
                       }
+                      $event.preventDefault()
                       _vm.buscarCliente()
                     },
                     input: function($event) {

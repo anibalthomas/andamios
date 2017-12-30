@@ -45,13 +45,6 @@ class ClientesController extends Controller
           // $this->validate($request, ['name' => 'required|min:3']);
           $this->validate($request, [
             'name' => 'required|min:3'
-            // 'ncientifico' => 'required',
-            // 'area' => 'required',
-            // 'lugar' => 'required',
-            // 'ubicacion' => 'required',
-            // 'category' => 'required',
-            // 'excerpt' => 'required',
-            // 'tags' => 'required'
           ]);
 
           // $cliente = Cliente::create($request->only('name'));

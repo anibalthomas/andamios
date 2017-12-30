@@ -9,13 +9,13 @@
         <div class="form-group">
             <label for="name" class="col-md-4 control-label">Nombre</label>
             <div class="col-md-8">
-                <input list
+                <input
                  name="name"
                  v-model="buscar"
                  type="text"
                  placeholder="Escribe el nombre del cliente"
                  class="form-control"
-                 @keyup.enter="buscarCliente()"
+                 @keyup.enter.prevent="buscarCliente()"
                  autofocus>
 
                  <div class="panel-footer" v-if="clientes.length">
@@ -29,6 +29,7 @@
                        </li>
                     </ul>
                  </div>
+
             </div>
       </div>
 
@@ -60,6 +61,7 @@
             </div>
           </div>
 
+
           <div class="form-group">
             <div class="col-md-12">
               <button  type="submit" class="btn btn-primary pull-right">Guardar</button>
@@ -67,7 +69,7 @@
           </div>
 
           <pre>{{cliente}}</pre>
-          <!-- <pre>{{clientes[0+1].name}}</pre> -->
+
       </div>
     </div>
   </form>
@@ -103,9 +105,10 @@ mounted() {},
 
           crearcontrato()
            {
-            axios.post('/contrato', this.cliente)
+            axios.post('/contratos', this.cliente)
               .then(res =>{
                   console.log(res.data);
+
               });
             }
     },
