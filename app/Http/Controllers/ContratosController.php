@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Cliente;
+use App\Contrato;
 use Illuminate\Http\Request;
 
 class ContratosController extends Controller
@@ -42,8 +43,16 @@ class ContratosController extends Controller
      */
     public function store(Request $request)
     {
-        //
+
+
+      $contrato = Contrato::create([
+        'name' => $request->input('name'),
+        'domicilio' => $request->input('domicilio'),
+        'colonia' => $request->input('colonia')
+      ]);
+
     }
+
 
     /**
      * Display the specified resource.

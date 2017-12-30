@@ -14,26 +14,16 @@
   <div class="col-md-12">
     <div class="panel panel-default">
       <div class="panel-heading">Elaborar Contrato</div>
-        <div class="panel-body">
 
-          <form class="form-horizontal" action="" method="POST">
-
+      <div class="panel-body">
 
             <div id='app'>
-              <ejemplo></ejemplo>
+              <contrato></contrato>
             </div>
 
-              <div class="panel-footer">
-                <div class="form-group">
-                  <div class="col-md-12">
-                    <button  type="submit" class="btn btn-primary pull-right">Guardar</button>
-                  </div>
-                </div>
-            </div>
 
-          </form>
-
-        </div>
+              {{-- <div class="panel-footer">
+            </div> --}}
     </div>
   </div>
 </div>
@@ -41,3 +31,28 @@
 
 
 @endsection
+@push('styles')
+  {{-- <link href="/select/css/select2.min.css" rel="stylesheet" /> --}}
+  <link rel="stylesheet" type="text/css" href="/semantic/semantic.min.css">
+@endpush
+@push('scripts')
+  {{-- <script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+<script src="/semantic/semantic.min.js"></script> --}}
+
+  {{-- <script src="/select/js/select2.min.js"></script> --}}
+  <script>
+
+// $(document).ready(function() {
+//   $('.clt').select2();
+// });
+// $('select.dropdown')
+//   .dropdown()
+// ;
+//
+ </script>
+
+
+@endpush
