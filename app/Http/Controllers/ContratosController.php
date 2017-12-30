@@ -48,7 +48,9 @@ class ContratosController extends Controller
       $contrato = Contrato::create([
         'name' => $request->input('name'),
         'domicilio' => $request->input('domicilio'),
-        'colonia' => $request->input('colonia')
+        'colonia' => $request->input('colonia'),
+        'telcasa' => $request->input('telcasa'),
+        'telcel' => $request->input('telcel')
       ]);
 
     }

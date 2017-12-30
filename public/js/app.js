@@ -42739,6 +42739,20 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
@@ -42933,6 +42947,66 @@ var render = function() {
                         return
                       }
                       _vm.$set(_vm.cliente, "colonia", $event.target.value)
+                    }
+                  }
+                })
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "form-group" }, [
+              _c("label", { staticClass: "col-md-4 control-label" }, [
+                _vm._v("Telefono")
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "col-md-8" }, [
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.cliente.telcasa,
+                      expression: "cliente.telcasa"
+                    }
+                  ],
+                  staticClass: "form-control",
+                  attrs: { name: "colonia", type: "text", disabled: "" },
+                  domProps: { value: _vm.cliente.telcasa },
+                  on: {
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.$set(_vm.cliente, "telcasa", $event.target.value)
+                    }
+                  }
+                })
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "form-group" }, [
+              _c("label", { staticClass: "col-md-4 control-label" }, [
+                _vm._v("Celular")
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "col-md-8" }, [
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.cliente.telcel,
+                      expression: "cliente.telcel"
+                    }
+                  ],
+                  staticClass: "form-control",
+                  attrs: { name: "colonia", type: "text", disabled: "" },
+                  domProps: { value: _vm.cliente.telcel },
+                  on: {
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.$set(_vm.cliente, "telcel", $event.target.value)
                     }
                   }
                 })

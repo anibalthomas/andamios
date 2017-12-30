@@ -47,6 +47,20 @@
           </div>
 
           <div class="form-group">
+            <label  class="col-md-4 control-label">Telefono</label>
+            <div class="col-md-8">
+              <input name="colonia" type="text" class="form-control" disabled v-model="cliente.telcasa">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label  class="col-md-4 control-label">Celular</label>
+            <div class="col-md-8">
+              <input name="colonia" type="text" class="form-control" disabled v-model="cliente.telcel">
+            </div>
+          </div>
+
+          <div class="form-group">
             <div class="col-md-12">
               <button  type="submit" class="btn btn-primary pull-right">Guardar</button>
             </div>

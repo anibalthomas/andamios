@@ -18,8 +18,8 @@ class CreateContratosTable extends Migration
             $table->string('name');
             $table->string('domicilio');
             $table->string('colonia');
-            // $table->string('telcasa');
-            // $table->string('telcel');
+            $table->string('telcasa');
+            $table->string('telcel');
             $table->timestamps();
         });
     }
